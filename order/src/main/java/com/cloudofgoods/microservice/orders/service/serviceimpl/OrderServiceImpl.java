@@ -32,7 +32,8 @@ public class OrderServiceImpl implements OrderService {
     @Override
     @Transactional
     public void saveOrder(OrderPlace request) {
-        Long id = request.orderId();
+        Long id =0L;
+                id = request.orderId();
         System.out.println(request.orderDetails()  +" "+ request.orderId()+" ddddddddddddddddddddddddddddddddd");
         Orders orders = Orders.builder()
                 .borrower_id(request.borrower_id())

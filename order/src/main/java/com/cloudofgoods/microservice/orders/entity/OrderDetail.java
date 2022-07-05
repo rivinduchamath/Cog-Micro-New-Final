@@ -23,7 +23,7 @@ public class OrderDetail {
 
 
     @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.REFRESH, CascadeType.DETACH, CascadeType.MERGE})
-    @JoinColumn(name = "order_id", referencedColumnName = "id", insertable = false, updatable = false)
+    @JoinColumn(name = "order_id", referencedColumnName = "order_id", insertable = false, updatable = false)
     private Orders order;
 
     public OrderDetail() {

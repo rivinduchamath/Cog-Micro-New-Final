@@ -24,7 +24,7 @@ import java.util.List;
 public class Orders {
    @Id
    @GeneratedValue(strategy = GenerationType.AUTO)
-   private Long id;
+   private Long order_id;
    private int borrower_id;
    private int order_status_id;
    private double total_amount;
