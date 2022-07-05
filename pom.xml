@@ -10,12 +10,12 @@
     <version>1.0-SNAPSHOT</version>
 
     <modules>
-        <module>items</module>
         <module>customer</module>
         <module>eureka-server</module>
         <module>api-gateway</module>
         <module>hystrix</module>
         <module>cloudconfig</module>
+        <module>order</module>
     </modules>
 
     <name>cloudofgoods</name>
